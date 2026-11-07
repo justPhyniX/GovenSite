@@ -1,0 +1,115 @@
+body {
+    background-color: #001529;
+    margin: 0;
+}
+
+#main-content {
+    margin: 0 30em;
+    border: 3px solid #6E7378;
+    border-top-color: white;
+    border-left-color: white;
+    background-color: #565757;
+}
+
+img {
+    image-rendering: crisp-edges;
+    margin: 2px;
+}
+
+.button {
+    display: flex;
+    aspect-ratio: 1;
+    min-width: 16px;
+    padding: 0;
+
+    background: #C3C7CB;
+    border: 2px solid #6E7378;
+    border-top-color: white;
+    border-left-color: white;
+
+    cursor: pointer;
+}
+
+.button:active {
+    border: 2px solid white;
+    border-top-color: #6E7378;
+    border-left-color: #6E7378;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 28px;
+    padding: 2px 4px;
+    background: linear-gradient(90deg, #08246B, #A5CBF7);
+}
+
+#goven-icon {
+    aspect-ratio: 1;
+    min-width: 16px;
+}
+
+#goven-title {
+    display: flex;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9em;
+    gap: 0.2em;
+}
+
+#top-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.2em;
+    
+}
+
+#top-ticker {
+    display: flex;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 0.5em 0;
+}
+
+.diamond {
+    margin: 1em;
+    color: yellow;
+}
+
+.flashing {
+    animation: flash 1s steps(1, start) infinite;
+}
+
+@keyframes flash {
+    50% {
+        visibility: hidden;
+    }
+}
+
+.banner {
+    border-bottom: purple dashed 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 15em;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+#subtitle {
+    border: rgb(255, 217, 0) solid;
+    padding: 2em;
+}
+
+#join-button {
+    margin: 3em;
+}
